@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order a Cake | Sweet Delights</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="brand-title fade-in">Order a Cake</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-section fade-up">
+      <h2 class="section-title">Fill in Your Order Details</h2>
+      <form action="/order" method="POST" class="form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <textarea name="address" placeholder="Delivery Address" required></textarea>
+        <input type="text" name="cake" value="<%= cake %>" placeholder="Cake Name" required />
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Sweet Delights. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
