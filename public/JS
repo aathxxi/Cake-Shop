@@ -1,0 +1,12 @@
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const orderForm = document.querySelector('.form');
+
+  if (orderForm) {
+    orderForm.addEventListener('submit', (e) => {
+      const confirmOrder = confirm("Are you sure you want to place the order?");
+      if (!confirmOrder) e.preventDefault();
+    });
+  }
+});
